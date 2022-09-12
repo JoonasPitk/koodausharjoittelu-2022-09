@@ -41,8 +41,8 @@ henkilölistaus()
 
 def pääfunktio():
     syntymävuosi = 1970
-    aliisa = henkilö.Henkilö("Aliisa", 1980)
-    bob = henkilö.Henkilö(nimi="Bob", syntymävuosi=1967)
+    aliisa = henkilö.Henkilö('Aliisa', 1980)
+    bob = henkilö.Henkilö(nimi='Bob', syntymävuosi=1967)
     print(aliisa)
     henkilöt = [aliisa, bob]
 
@@ -59,13 +59,13 @@ def pääfunktio():
     i = 0
     while True:
         i += 1
-        print("moi!", i)
+        print('Moi!', i)
         if i > 8:
             break
         if i % 2 == 0:
             continue
         if i > 5:
-            print("iso on")
+            print('Iso on')
 
     print("---------------")
 
@@ -74,11 +74,11 @@ def pääfunktio():
 
     print(aliisa.ikä())
 
-    print("kutsutaan henkilötiedot-funktiota")
+    print('kutsutaan henkilötiedot-funktiota')
     lempiväri = henkilöiden_lempivärit['Bob']
     paluuarvo = bob.tiedot(lempiväri=lempiväri)
-    print("palattiin funktiosta, paluuarvo:", paluuarvo)
-    print("Joku syntymävuosi:", syntymävuosi)
+    print('palattiin funktiosta, paluuarvo:', paluuarvo)
+    print('Joku syntymävuosi:', syntymävuosi)
 
 
 # pääfunktio()

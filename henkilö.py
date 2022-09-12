@@ -9,10 +9,10 @@ class Henkilö:
     def ikä(self):
         return nykyinen_vuosi() - self.syntymävuosi
 
-    def tiedot(self, lempiväri="musta"):
-        print("Moikka,", self.nimi)
-        print("Ai, olet", self.ikä(), "vuotta vanha.")
-        print("Lempivärisi on siis", lempiväri)
+    def tiedot(self, lempiväri='musta'):
+        print('Moikka,', self.nimi)
+        print('Ai, olet', self.ikä(), 'vuotta vanha.')
+        print('Lempivärisi on siis', lempiväri)
         return self.syntymävuosi
 
     def __repr__(self):
