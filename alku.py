@@ -56,6 +56,19 @@ def pääfunktio():
     #         print ('Iso on')
 
 
+    i = 0
+    while True:
+        i += 1
+        print("moi!", i)
+        if i > 8:
+            break
+        if i % 2 == 0:
+            continue
+        if i > 5:
+            print("iso on")
+
+    print("---------------")
+
     print(aliisa.nimi)
     print(aliisa.syntymävuosi)
 
