@@ -29,15 +29,15 @@ def henkilölistaus():
         henkilöt.append(h)
 
     for h in henkilöt:
-        print(h.nimi, h.syntymävuosi)
-        print(h.nimi, 'on', h.ikä(), 'vuotta vanha')
+        print(f'{h.nimi} (s. {h.syntymävuosi})')
+        print(f'{h.nimi} on {h.ikä():06.2f} vuotta vanha.')
         lemmikit = henkilöiden_lemmikit.get(h.nimi, [])
         for lemmikki in lemmikit:
             print('Lemmikki:', lemmikki)
         try:
             print('Lempiväri:', henkilöiden_lempivärit[h.nimi])
         except KeyError:
-            print('Ei lempiväriä tiedossa')
+            print('Ei lempiväriä tiedossa.')
         print('-')
 
 henkilölistaus()
